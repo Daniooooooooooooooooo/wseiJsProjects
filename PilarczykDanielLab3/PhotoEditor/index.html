@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Photo Editor</h1>
+    <div class="inputs">
+        <div class="input">
+          <input type="file" name="file" id="fileUpload">
+        </div>
+        <div class="input">
+            <label>Brightness:</label>
+            <input type="range" id="brightness" min="0" max="2" value="1" step=".05" onchange="ApplyFilters()" />
+        </div>
+        <div class="input">
+            <label>Contrast:</label>
+            <input type="range" id="contrast" min="0" max="100" value="0" step="1" onchange="ApplyFilters()" />
+        </div>
+    </div>
+    <div id="canvas-container">
+    </div>
+    <div class="img-none">
+        <img id="source" src="" />
+    </div>
+    <script src="main.js"> </script>
+  </body>
+</html>

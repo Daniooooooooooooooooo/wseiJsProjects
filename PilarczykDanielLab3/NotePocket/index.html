@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="newNote blue">
+        <form id="form" name="form">
+            <input type="text" name="header" class="noteHeader" placeholder="Title" required>
+            <input type="text" name="content" class="noteContent" placeholder="Content">
+            <footer class="noteFooter">
+                <div class="colorPicker">
+                    <div class="red" onclick="ChangeColor(this)"></div>
+                    <div class="blue" onclick="ChangeColor(this)"></div>
+                    <div class="green" onclick="ChangeColor(this)"></div>
+                    <div class="yellow" onclick="ChangeColor(this)"></div>
+                    <div class="black" onclick="ChangeColor(this)"></div>
+                </div>
+                <button type="submit">Add Note</button>
+                <input type="checkbox" name="important" value="1">
+                Important
+            </footer>
+        </form>
+    </div>
+    <div id="noteBoard">
+      
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

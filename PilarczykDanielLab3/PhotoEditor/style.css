@@ -1,0 +1,35 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap;
+  background-color: aliceblue;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.img-none {
+  display: none;
+}
+
+.inputs {
+  padding: 10px 20px;
+}
+
+.input label {
+  margin-bottom: 5px;
+  display: block;
+}
+.input {
+  margin-bottom: 100px;
+  display: block;
+}
+#canvas-container{
+    width: 860px;
+    height: 640px;
+    border: 2px solid aqua;
+}

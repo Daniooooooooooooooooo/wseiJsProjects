@@ -1,0 +1,87 @@
+body {
+  margin: 10px;
+  background-color: aliceblue;
+}
+textarea {
+  resize: none;
+}
+.newNote {
+  color: teal;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 20px;
+  order: 0;
+}
+.newNote .noteContent{
+  margin-top: 10px;
+}
+.newNote .noteHeader{
+  height: 30px;
+}
+.newNote footer{
+  padding-top: 10px;
+  text-align: right;
+}
+.note {
+  color: teal;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 20px;
+  order: 2;
+  height: 40vh;
+  width: 15vw;
+}
+.noteHeader{
+  text-align: center;
+}
+.noteContent{
+  height: 31vh;
+}
+.noteHeader, .noteContent{
+  margin: 5px;
+  width: 100%;
+  background-color: lightgray;
+  color: teal;
+}
+.noteFooter button, .noteFooter input{
+  float: right;
+}
+#noteBoard {
+    padding: 20px;
+    width: 98%;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 300px);
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    justify-content: flex-start;
+    overflow: scroll;
+    height: 45vh;
+}
+.colorPicker{
+  display: inline-block;
+  padding-right: 20px;
+}
+.colorPicker div{
+  display: inline-block;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid grey;
+}
+.red{
+  background: red;
+}
+.green{
+  background: green;
+}
+.blue{
+  background: blue;
+}
+.black{
+  background: black;
+}
+.yellow{
+  background: yellow;
+}
+
